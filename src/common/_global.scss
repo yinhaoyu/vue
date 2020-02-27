@@ -1,0 +1,192 @@
+@charset 'utf-8';
+////
+/// 原子类型样式
+///
+/// @group undefined
+/// @author hys
+////
+// single attribute
+// -----------------------------------------------------------------------------
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.ng-hide {
+    display: none !important;
+}
+
+.ng-show {
+    display: block !important;
+}
+
+.hidden {
+    visibility: hidden;
+
+    height: 0;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.pd0 {
+    padding: 0;
+}
+
+.mg0 {
+    margin: 0;
+}
+
+.br0 {
+    border: 0!important;
+}
+
+// clear float
+// -----------------------------------------------------------------------------
+.clear {
+    font-size: 0;
+
+    clear: both;
+    overflow: hidden;
+
+    height: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+
+    height: 0;
+
+    content: '\0020';
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+// 多行显示
+// -----------------------------------------------------------------------------
+.auto-line {
+    white-space: normal !important;
+}
+
+// 文本限制显示
+// -----------------------------------------------------------------------------
+.one-line,
+.two-line,
+.three-line {
+    display: -webkit-box;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    word-break: break-word;
+
+    -webkit-box-orient: vertical;
+}
+
+// 单行显示
+// -----------------------------------------------------------------------------
+.one-line {
+    -webkit-line-clamp: 1;
+}
+
+// 2行显示
+// -----------------------------------------------------------------------------
+.two-line {
+    -webkit-line-clamp: 2;
+}
+
+// 3行显示
+// -----------------------------------------------------------------------------
+.three-line {
+    -webkit-line-clamp: 3;
+}
+
+// 栅格重置 padding
+// -----------------------------------------------------------------------------
+.xrow,
+.xcol {
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+}
+
+.xcol {
+    -moz-box-flex: 1;
+    /* Firefox */
+    -webkit-box-flex: 1;
+    /* Safari and Chrome */
+    -ms-flex: 1;
+    /* Internet Explorer 10 */
+}
+
+// 间距
+.mt12 {
+    margin-top: 12px;
+}
+
+.mr12 {
+    margin-right: 12px;
+}
+
+.mb12 {
+    margin-bottom: 12px;
+}
+
+.ml12 {
+    margin-left: 12px;
+}
+
+.color-primary {
+    color: #ff7000!important;
+}
+
+// 富文本图片
+.rich-text {
+    img {
+        // display: block;
+        width: 100%; // height: 100%;
+    }
+}
+
+// 授权过期
+.license-expires-login {
+    padding: 10px 20px 0px;
+    color: gray;
+    font-size: 12px;
+    p {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
